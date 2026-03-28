@@ -596,7 +596,7 @@ class Game:
             return
         target_code = "H" if target_type == "hole" else "B"
         redraw_clause = "W{}{}".format(target_code, target_index)
-        reveal_clause = "X" + old_card
+        reveal_clause = "X" + str(old_card)
         opponent = 1 - actor_idx
         self.player_messages[opponent].append(redraw_clause)
         self.player_messages[opponent].append(reveal_clause)
