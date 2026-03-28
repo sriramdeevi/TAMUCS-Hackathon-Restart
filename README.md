@@ -55,16 +55,24 @@ At the end of the contest, you will submit a `.zip` file of the `python_skeleton
 
 After cloning the repository, create a virtual environment and install dependencies with `pip`:
 
+Mac:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Windows:
+```bash
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install -r requirements.txt
+```
+
 Alternatively, if you have conda/miniconda:
 ```bash
-conda create -y -n pkr python=3.10
-conda activate pkr
+conda create -y -n pkrbot python=3.10 
+conda activate pkrbot 
 pip install -r requirements.txt
 ```
 
